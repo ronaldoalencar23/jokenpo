@@ -7,11 +7,24 @@ start.addEventListener("click", () => {
   document.getElementById("h1").innerHTML = "Choose one";
 });
 
+const rock = document.getElementsByClassName("rock");
+rock[0].addEventListener("click", () => {
+  console.log("Funcionando");
+});
+
+const paper = document.getElementsByClassName("paper");
+
+const scissors = document.getElementsByClassName("scissors");
+
+rock.addEventListener("click", () => {});
+
+function choice() {}
+
 // Falta dar valor às constantes
 
-const rock = 0;
-const scissors = 0;
-const paper = 0;
+// const rock = 0;
+// const scissors = 0;
+// const paper = 0;
 const playerChoice = 0;
 const computerChoice = 0;
 const draw = 0; // criar mensagem de empate
