@@ -2,7 +2,23 @@
   display: none;
 }
 
-.show {
-  display: block;
-  margin: 30px;
+.card {
+  width: 200px;
+  height: 300px;
+}
+
+#game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(97, 98, 156);
+}
+
+.humanChoice {
+  display: flex;
+}
+
+.selected {
+  border: 5px solid whitesmoke;
 }
