@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Sheldon's Jokenpo</title>
   </head>
   <body>
     <div id="game-board">
-      <h1>Make your choice!</h1>
+      <h1>MAKE YOUR CHOICE!</h1>
+
+      <style>
+        body {
+          background-image: url("background-image-bazinga.jpg");
+        }
+      </style>
       <div class="humanChoice">
         <div><img class="rock card" src="./images/1-rock.jpg" /></div>
         <div><img class="paper card" src="./images/2-paper.jpg" /></div>
@@ -18,12 +24,12 @@
         <div><img class="spock card" src="./images/5-spock.jpg" /></div>
       </div>
       <!-- h1 e div  -->
-      <h1>Computer's choice</h1>
+      <h1>COMPUTER'S CHOICE</h1>
       <div>
         <img class="computersImage card" src="./images/questionMark.jpg" />
       </div>
-      <h2>Result <span id="result"></span></h2>
-      <form><button>Play again</button></form>
+      <h2>RESULT :<span id="result"></span></h2>
+      <form><button>Rematch</button></form>
     </div>
     <script src="./script.js"></script>
   </body>

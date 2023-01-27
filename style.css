@@ -12,7 +12,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(97, 98, 156);
+  background-color: whitesmoke;
+  background-image: url("background-image-bazinga.jpg");
+}
+
+h1 {
+  font-family: Arial;
+  color: yellow;
+}
+
+h2 {
+  font-family: Arial;
+  color: yellow;
 }
 
 .humanChoice {

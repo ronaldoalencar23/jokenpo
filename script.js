@@ -30,7 +30,7 @@ scissors[0].addEventListener("click", () => {
   generateComputerChoice();
   check("scissors");
 });
-//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const lizard = document.getElementsByClassName("lizard");
 lizard[0].addEventListener("click", () => {
   lizard[0].classList.add("selected");
@@ -44,10 +44,10 @@ spock[0].addEventListener("click", () => {
   generateComputerChoice();
   check("spock");
 });
-///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function generateComputerChoice() {
-  let possibleChoices = ["rock", "paper", "scissors", "lizard", "spock"]; ////////////////////////////////
+  let possibleChoices = ["rock", "paper", "scissors", "lizard", "spock"]; //  ------------------>              Adicional lizard-spock
   const randomChoice = Math.floor(Math.random() * possibleChoices.length);
   computerChoice = possibleChoices[randomChoice];
   computersImage[0].setAttribute(
@@ -58,13 +58,9 @@ function generateComputerChoice() {
 
 // generateComputerChoice();
 
-// const rock = 0;
-// const scissors = 0;
-// const paper = 0;
-// let playerChoice = "";
-let draw = "It's a draw"; // criar mensagem de empate
-let playerVictory = "You won!"; // criar mensagem de vitória
-let playerDefeat = "You lose..."; // criar mensagem de derrota
+let draw = " It's a draw";
+let playerVictory = " YOU WIN!";
+let playerDefeat = " you lose...";
 
 // Comparação e resultado
 function check(playerChoice) {
@@ -93,7 +89,7 @@ function check(playerChoice) {
   } else if (playerChoice === "scissors" && computerChoice === "paper") {
     result.innerText = playerVictory; // se player 1 tesoura e computador papel, vitória player 1
   } else if (playerChoice === "scissors" && computerChoice === "lizard") {
-    result.innerText = playerVictory; // //////////////////////////////
+    result.innerText = playerVictory; // //////////////////////////////         ------------------>
   } else if (playerChoice === "lizard" && computerChoice === "paper") {
     result.innerText = playerVictory; // //////////////////////////////         ------------------>
   } else if (playerChoice === "lizard" && computerChoice === "spock") {
@@ -112,10 +108,6 @@ function check(playerChoice) {
     result.innerText = playerDefeat; // /////////////////////////////           ------------------>
   }
 }
-
-// -----------------------------------------------------------------
-
-//
 
 // Ctrl + K + C para comentar
 // Ctrl + K + U para remover comentário
